@@ -7,7 +7,6 @@ on:
 
 jobs:
   create-deployment-artifacts:
-
   name: Create Deployment Artifacts
   runs-on: ubuntu-latest
   steps:
