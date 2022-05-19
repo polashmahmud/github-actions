@@ -7,6 +7,7 @@
     "port": "22",
     "beforeHooks": "",
     "afterHooks": "",
-    "path": "/var/www/html"
+    "path": "/var/www/html",
+    "key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDNyDnPyMtPg/8RiR7mS8eCR1aWibi8x78BCAzgIZik8c/9kMKI3s6c2ofrUTOnm1+X/+VjaS1Chx8kuZN66ZalzffVKqgnH0euRgAj/XdrRtwhsYzlyDLSZtp9O80MoQ3awjk2RNBIDvtfX91ofVmIKh8vZ4YMpuc5Rng4qIINLQVCR1SMLvUb/CNZo6ogEpiNhwNK2b6/y/eh8gamIxKownrKD/OQ03h+wvUdY6bAfHGhFQIy2QbszcEMnCCvbixQOBHeb6Bns/v217aX0jIWDwpPYQnMM0BQWPj8CG3RS7ky1w0EfvfsAHflOv0lHm+pgotZmhvFurGgn2zZVYvtsxod6KvJvrbkQQaRL6rP9OBANW4WKnTKpGKkq/CAlRoiwNr6NPvIP0fcgcYsTj2zsrtrQgrKZlQG+pvi3XfglWgAXUYwW5qnp9+YfdV0i5YKJvfYhWMg/G/zZYfIL0EiJe90wvR6jNN3uEF2bfQP1iiT+4tkK3xiBtXbL9j+hhk= polashmahmud@Polashs-MacBook-Pro.local"
   }
 ]
