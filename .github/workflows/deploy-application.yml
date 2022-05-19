@@ -25,3 +25,6 @@ jobs:
       - name: Composer install
         run: |
           composer install --no-dev --prefer-dist --no-progress --no-suggest --no-interaction
+
+      - name: Create deployment artifacts
+        run: tar -czf app.tar.gz *
