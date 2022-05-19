@@ -59,12 +59,4 @@ jobs:
       - uses: actions/download-artifact@v2
         with:
           name: app-build
-      - name: Upload
-        uses: appleboy/scp-action@master
-        with:
-          host: ${{ matrix.server.ip }}
-          username: ${{ matrix.server.username }}
-          key: ${{ secrets.SSH_KEY }}
-          port: ${{ matrix.server.port }}
-          source: ${{ github.sha }}.tar.gz
-          target: ${{ matrix.server.path }}/artifacts
+      
