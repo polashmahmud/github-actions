@@ -8,6 +8,8 @@ jobs:
   create-deployment-artifacts:
     name: Create deployment artifacts
     runs-on: ubuntu-latest
+    outputs:
+      deployment-matrix: ${{ steps.export-deployment-matrix.outputs.deployment-matrix }}
     steps:
       - uses: actions/checkout@v2
 
@@ -36,3 +38,12 @@ jobs:
         with:
           name: app-deploy
           path: ${{ github.sha }}.tar.gz
+
+      - name: Export deployment matrix
+        id: export-deployment-matrix
+        run: |
+          JSON="$(cat ./deployment-config.json)"
+          JSON="${JSON//'%'/'%25'}"
+          JSON="${JSON//$'\n'/'%0A'}"
+          JSON="${JSON//$'\r'/'%0D'}"
+          echo "::set-output name=deployment-matrix::$JSON"
