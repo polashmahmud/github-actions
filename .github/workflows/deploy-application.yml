@@ -58,7 +58,7 @@ jobs:
     steps:
       - uses: actions/download-artifact@v2
         with:
-          name: app-build
+          name: app-deploy
 
       - name: Upload
         uses: appleboy/scp-action@master
