@@ -1,0 +1,21 @@
+name: Deploy Laravel Project
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  create-deployment-artifacts:
+    name: Create deployment artifacts
+    uses: appleboy/ssh-action@master
+    with:
+      host: 104.251.216.142
+      username: root
+      password: 5xQ8g2FC6t8Q8tA
+      port: 22
+      script: |
+        cd /root/github-actions
+        git pull
+        composer install
+        
