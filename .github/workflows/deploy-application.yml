@@ -110,8 +110,7 @@ jobs:
           username: ${{ matrix.server.username }}
           password: ${{ matrix.server.password }}
           port: ${{ matrix.server.port }}
-          envs:
-            envs: GITHUB_SHA,RELEASE_PATH,ACTIVE_RELEASE_PATH,STORAGE_PATH,BASE_PATH
+          envs: GITHUB_SHA,RELEASE_PATH,ACTIVE_RELEASE_PATH,STORAGE_PATH,BASE_PATH
           script: |
             ${{ matrix.server.beforeHooks }}
                 
