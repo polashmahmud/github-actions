@@ -61,5 +61,11 @@ jobs:
           name: app-deploy
 
       - name: Upload
-        run: |
-          scp ${{ github.sha }}.tar.gz root@192.168.50.216:/var/www/html/artifacts
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ matrix.server.ip }}
+          username: ${{ matrix.server.username }}
+          key: ${{ secrets.key }}
+          port: ${{ matrix.server.port }}
+          source: ${{ github.sha }}.tar.gz
+          target: ${{ matrix.server.path }}/artifacts
