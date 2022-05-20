@@ -7,6 +7,6 @@
     "port": "22",
     "beforeHooks": "",
     "afterHooks": "",
-    "path": "/root",
+    "path": "/root"
   }
 ]
